@@ -22,4 +22,12 @@ print(li)
 output: [0, 8, 26]
 
 
-method2: uUsing re.finditer()
+method2: uUsing re.finditer() //getting problem with some test cases
+import re
+test_str = "aaa"
+test_sub = "aa"
+lenn=len(test_str)
+li=[]
+for i in re.finditer(test_sub, test_str):
+    li.append(i.start())
+print(li)
