@@ -11,14 +11,14 @@ i.e the output is [0,5,10,15]
 
 method1: using startswith method of string
 
-**test_str= "GeeksforGeeks is best for Geeks"
+test_str= "GeeksforGeeks is best for Geeks"
 test_sub = "Geeks"
 lenn=len(test_str)
 li=[]
 for i in range(lenn):
     if test_str.startswith(test_sub,i):
         li.append(i)
-print(li)**
+print(li)
 output: [0, 8, 26]
 
 
