@@ -1,0 +1,25 @@
+reference: https://www.geeksforgeeks.org/python-all-occurrences-of-substring-in-string/
+
+Q) program to find All occurrences of substring in string
+
+ex:string="text text text text"
+    sub="text"
+here string.index(sub)->will give 0(first occurence only)
+
+the program is to find first indexes of sub in string
+i.e the output is [0,5,10,15]
+
+method1: using startswith method of string
+
+**test_str= "GeeksforGeeks is best for Geeks"
+test_sub = "Geeks"
+lenn=len(test_str)
+li=[]
+for i in range(lenn):
+    if test_str.startswith(test_sub,i):
+        li.append(i)
+print(li)**
+output: [0, 8, 26]
+
+
+method2: uUsing re.finditer()
